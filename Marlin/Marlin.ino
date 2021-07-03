@@ -1,7 +1,7 @@
 /*
 ================================================================================
 
-  Marlin Firmware for 3DPrinty Mk1b
+  Marlin Firmware for 3DPrinty Mk2
 
   (c) 2011-2018 MarlinFirmware
   Portions of Marlin are (c) by their respective authors.
