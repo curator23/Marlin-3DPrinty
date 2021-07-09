@@ -636,7 +636,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 150, 150, 50, 100 }
+#define DEFAULT_MAX_FEEDRATE          { 125, 125, 41, 100 }
         
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -644,7 +644,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 1000, 1000 }
+#define DEFAULT_MAX_ACCELERATION      { 10000, 10000, 1000, 1000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -654,9 +654,9 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          4000    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  1000    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   800    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_TRAVEL_ACCELERATION   200     // X, Y, Z acceleration for travel (non printing) moves
 
 /**
  * Default Jerk (mm/s)
@@ -668,7 +668,7 @@
  */
 #define DEFAULT_XJERK                 1.0
 #define DEFAULT_YJERK                 1.0
-#define DEFAULT_ZJERK                  0.3
+#define DEFAULT_ZJERK                  1.0
 #define DEFAULT_EJERK                  5.0
 
 /**
@@ -900,7 +900,7 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 250
+#define X_BED_SIZE 250j
 #define Y_BED_SIZE 250
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
